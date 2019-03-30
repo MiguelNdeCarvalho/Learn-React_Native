@@ -10,10 +10,9 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
 const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
+  ios: 'Basically you are running my app on ios!',
   android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
+    'Basically you are running my app on android!'
 });
 
 export default class App extends Component {
@@ -22,9 +21,6 @@ export default class App extends Component {
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Hello World!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
         </Text>
         <Text style={styles.instructions}>
           {instructions}
